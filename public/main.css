@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  margin: 24px 0;
+  padding: 0;
+}
+
+ul.posts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.posts li {
+  border-bottom: 1px dashed #999;
+  height: 24px;
+  margin-bottom: 6px;
+}
+h2 {
+  text-align: center;
+  margin: 24px;
+  margin-bottom: 12px;
+}
+#sign-in-status {
+  text-align: right;
+  margin-right: 12px;
+}
+.sign-out {
+  position: absolute;
+  right: 12px;
+}
+.compose {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+}
+section.compose-box {
+  position: fixed;
+  bottom: 36px;
+  width: 100%;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+.btn-sign-in {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 48px;
+  font-size: 1.5em;
+}

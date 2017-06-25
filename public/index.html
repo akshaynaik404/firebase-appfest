@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalambist</title>
+    <link rel="stylesheet" href="./main.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.2.1/firebaseui.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Kalambist.tk</h1>
+    </header>
+    <div class="btn-container">
+      <button class="btn-sign-in">Sign In</button>
+    </div>
+    <div id="firebaseui-auth-container" class="hide"></div>
+    <div id="sign-in-status"></div>
+    <div id="sign-in"></div>
+    <div id="sign-out"></div>
+    <div id="account-details"></div>
+    <button class="compose" style="display: none">Compose</button>
+    <h2>Posts</h2>
+    <ul class="posts">
+    </ul>
+    <section class="compose-box" style="display: none">
+      <form>
+        <label for="title">Title:   <input type="text" name="" value="" id="title"  ></label>
+        <button class="compose-box-post">Post</button>
+      </form>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.2.1/firebaseui.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAleUazQFzClGIcaMaHiyYIxrYTHo6kBvQ",
+        authDomain: "kalambist-33e41.firebaseapp.com",
+        databaseURL: "https://kalambist-33e41.firebaseio.com",
+        projectId: "kalambist-33e41",
+        storageBucket: "kalambist-33e41.appspot.com",
+        messagingSenderId: "70545826916"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+
+</html>
